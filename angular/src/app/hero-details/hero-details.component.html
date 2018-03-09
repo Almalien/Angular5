@@ -1,3 +1,19 @@
-<p>
-  hero-details works!
-</p>
+
+<img class="img-fluid" src="{{hero.photoG}}" alt="{{hero.nick}}">
+<div style="text-align:left" *ngIf="hero">
+  <li class="list-unstyled">
+    
+    <h2>{{ hero.nick | uppercase }}</h2>
+    <br>
+    <p>{{hero.details}}</p>
+    <div><span style="font-weight: bold">Id: </span>{{hero.id}}</div>
+    <div><span style="font-weight: bold">Real name: </span>{{hero.realName}}</div>
+    <div><span style="font-weight: bold">Height: </span>{{hero.height}}</div>
+    <div><span style="font-weight: bold">Weight: </span>{{hero.weight}}</div>
+    <div><span style="font-weight: bold">Powers: </span>{{hero.powers}}</div>
+    <div><span style="font-weight: bold">Abilities: </span>{{hero.abilities}}</div>
+    <div><span style="font-weight: bold">Affiliations: </span>{{hero.affiliations}}</div>
+    <div><span style="font-weight: bold">First appearance: </span>{{hero.first}}</div>
+    <div><span style="font-weight: bold">Origin: </span>{{hero.origin}}</div>
+  </li>
+</div>
